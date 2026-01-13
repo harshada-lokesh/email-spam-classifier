@@ -35,7 +35,7 @@ The model was evaluated using a standard 80/20 train-test split.
 
 ## 📁 Project Structure
 ```text
-├── dataset/            # Dataset from Kaggle
+├── dataset.md            # Dataset from Kaggle
 ├── notebook/
 │   └── email_spam_classification_model.ipynb    # Data cleaning, EDA, and Model
 ├── results/
