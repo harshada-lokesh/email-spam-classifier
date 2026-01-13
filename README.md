@@ -1,6 +1,6 @@
 # 📧 Email Spam Classification
 
-This repository contains a Machine Learning solution to identify and filter spam emails using **Logistic Regression**. The model is trained on the SMS/Email Spam Collection dataset to distinguish between legitimate messages ("Ham") and "Spam."
+This repository contains a Machine Learning solution to identify and filter spam emails using **Logistic Regression**. The model is trained on the SMS/Email Spam Collection dataset to distinguish between legitimate messages ("NOT SPAM") and "SPAM."
 
 ## 🤖 Model Approach
 The project implements a classic NLP pipeline to transform raw text into numerical data for classification.
@@ -15,24 +15,32 @@ The model was evaluated using a standard 80/20 train-test split.
 | Metric | Score |
 | :--- | :--- |
 | **Accuracy** | 95.65% |
-| **Precision** | 0.88 |
-| **Recall** | 0.98 |
+| **Precision** | 88% |
+| **Recall** | 98% |
 
-###The Confusion Matrix:
-<p align="center">
-  <img src="graphs/yolo_result.png" width="600" alt="Centered image">
+### The Confusion Matrix:
+<p align="left">
+  <img src="results/confusion-matrix.png" width="300" alt="Centered image">
+</p>
+
+### The Model Prediction:
+<p align="left">
+  <img src="results/model-result.png" width="600" alt="Centered image">
 </p>
 
 ## 🛠️ Tech Stack
 * **Language:** Python
-* **Libraries:** Scikit-Learn, Pandas, NumPy, NLTK
-* **Workflow:** Jupyter Notebook
+* **Libraries:** Scikit-Learn, Pandas, NumPy, NLTK, Seaborn, Mathplotlib
+* **Workflow:** Jupyter Notebook in Kaggle
 
 ## 📁 Project Structure
 ```text
-├── data/
-│   └── spam.csv             # Dataset from Kaggle
-├── notebooks/
-│   └── spam_classifier.ipynb # Data cleaning, EDA, and Model
+├── dataset/            # Dataset from Kaggle
+├── notebook/
+│   └── email_spam_classification_model.ipynb    # Data cleaning, EDA, and Model
+├── results/
+│   └── confusion-matrix.png
+│   └── model-result.png
+│   └── metrics-result.png
 ├── .gitignore               # To ignore large data files
 └── README.md
